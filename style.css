@@ -1,0 +1,113 @@
+/* ================= General Body Styles ================= */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: #136a8a;
+    background: -webkit-linear-gradient(to right, #267871, #136a8a);
+    background: linear-gradient(to right, #267871, #136a8a);
+}
+
+/* ================= Calculator Container Styles ================= */
+
+.buttons {
+    background: #ee9ca7;
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 16px rgb(213, 215, 101);
+    border: dashed;
+}
+
+/* ================= Display Screen Styles ================= */
+
+.display {
+    width: 315px;
+    margin: 15px;
+    padding: 25px;
+    text-align: right;
+    font-size: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: black;
+    cursor: not-allowed;
+    pointer-events: none;
+    box-shadow: 0px 3px 16px rgb(230, 72, 24);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.display::placeholder {
+    color: #a70e8b;
+}
+
+/* ================= Button Rows ================= */
+
+.buttons > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+/* ================= Buttons Styles ================= */
+
+button {
+    width: 65px;
+    height: 65px;
+    margin: 5px;
+    border-radius: 50%;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #8b0672;
+    transition: 0.2s ease;
+    box-shadow: 0px 3px 5px rgb(8, 183, 192);
+    background: #50C9C3;
+    background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);
+    background: linear-gradient(to right, #96DEDA, #50C9C3);
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #EFEFBB;
+    background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
+    background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* ================= Special Buttons ================= */
+
+.special {
+    color: orangered;
+    font-weight: bold;
+    box-shadow: 0px 3px 6px rgba(159, 4, 4, 0.6);
+}
+
+/* ================= Equal Button ================= */
+
+.special_equal {
+    background: #666600;
+    background: -webkit-linear-gradient(to right, #999966, #666600);
+    background: linear-gradient(to right, #999966, #666600);
+    color: rgb(7, 34, 207);
+    font-weight: bold;
+}
+
+.special_equal:hover {
+    background: linear-gradient(to right, #b3b300, #808000);
+}
+

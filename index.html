@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="java.js"></script>
+</head>
+
+<body>
+
+<div class="buttons">
+    <input class="display" type="text" placeholder="0" readonly>
+
+    <div>
+        <button class="special" onclick="clearAll()">AC</button>
+        <button class="special" onclick="deleteLast()">DEL</button>
+        <button class="special" onclick="percentage()">%</button>
+        <button class="special" onclick="addToDisplay('/')">÷</button>
+    </div>
+
+    <div>
+        <button class="special" onclick="addToDisplay('√')">√</button>
+        <button class="special" onclick="addToDisplay('x²')">x²</button>
+        <button class="special" onclick="addToDisplay('1/x')">1/x</button>
+        <button class="special" onclick="addToDisplay('*')">×</button>
+    </div>
+
+    <div>
+        <button class="special" onclick="addToDisplay('sin')">sin</button>
+        <button class="special" onclick="addToDisplay('cos')">cos</button>
+        <button class="special" onclick="addToDisplay('tan')">tan</button>
+        <button class="special" onclick="addToDisplay('-')">−</button>
+    </div>
+
+    <div>
+        <button onclick="addToDisplay('7')">7</button>
+        <button onclick="addToDisplay('8')">8</button>
+        <button onclick="addToDisplay('9')">9</button>
+        <button class="special" onclick="addToDisplay('+')">+</button>
+    </div>
+
+    <div>
+        <button onclick="addToDisplay('4')">4</button>
+        <button onclick="addToDisplay('5')">5</button>
+        <button onclick="addToDisplay('6')">6</button>
+        <button class="special" onclick="addToDisplay('π')">π</button>
+    </div>
+
+    <div>
+        <button onclick="addToDisplay('1')">1</button>
+        <button onclick="addToDisplay('2')">2</button>
+        <button onclick="addToDisplay('3')">3</button>
+        <button class="special" onclick="addToDisplay('log')">log</button>
+    </div>
+
+    <div>
+        <button onclick="addToDisplay('0')">0</button>
+        <button class="special" onclick="addToDisplay('.')">.</button>
+        <button class="special" onclick="calculate()">Ans</button>
+        <button class="special_equal" onclick="calculate()">=</button>
+    </div>
+</div>
+
+</body>
+</html>
